@@ -1,0 +1,39 @@
+Prompt Injection Security Assessment
+
+Objective
+
+Evaluate how an AI assistant handles untrusted instructions embedded in external content.
+
+Scope
+
+A controlled test environment using synthetic data and non-sensitive test markers.
+
+Security Hypothesis
+
+Untrusted content may influence the assistant’s behavior if the system does not properly separate data from instructions.
+
+Test Methodology
+
+1. Establish the expected behavior using a benign document.
+2. Introduce a harmless test instruction into a separate test document.
+3. Compare the assistant’s responses.
+4. Record any unexpected behavior and relevant evidence.
+
+Expected Secure Behavior
+
+The assistant should treat document content as untrusted input and follow the application’s authorized instructions and security rules.
+
+Results
+
+Testing not yet completed.
+
+Remediation Recommendations
+
+• Clearly separate trusted instructions from retrieved content.
+• Enforce tool permissions outside the model.
+• Require authorization for sensitive actions.
+• Log and review tool calls.
+
+Ethical Scope
+
+Testing is limited to authorized environments and synthetic data.
