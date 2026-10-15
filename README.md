@@ -88,3 +88,21 @@ Current Goal
 
 Build practical AI security testing experience and develop clear, reproducible security reports.
 >>>>>>> origin/main
+## Independent Evaluation and Limitations
+
+The rule-based prompt-injection detector was evaluated on a separate, manually curated set of 8 test cases.
+
+**Results:**
+- Accuracy: 37.5%
+- Precision: 0.0%
+- Recall: 0.0%
+- True Positives (TP): 0
+- True Negatives (TN): 3
+- False Positives (FP): 0
+- False Negatives (FN): 5
+
+**Finding:** The detector missed all five cases labeled as unsafe in this evaluation set because their wording differed from the patterns explicitly implemented in the detector.
+
+**Limitation:** These results apply only to this small, manually curated test set. The detector is a keyword-based educational prototype, not a production security control or a general-purpose prompt-injection detector.
+
+**Next steps:** Expand the evaluation dataset, test false positives and false negatives, and compare improvements against a fixed evaluation set rather than repeatedly tuning against the same cases.
