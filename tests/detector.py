@@ -5,6 +5,7 @@ def simulated_ai(user_message):
     suspicious_patterns = [
         "ignore previous instructions",
         "ignore all rules",
+        "disregard all previous instructions",
     ]
 
     for pattern in suspicious_patterns:
