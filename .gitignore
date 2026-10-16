@@ -1,2 +1,15 @@
+
+# Python cache
 __pycache__/
-__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment variables and secrets
+.env
+.env.*
+
+# Test artifacts
+.pytest_cache/

@@ -91,3 +91,20 @@ This evaluation uses only two model inputs and a small phrase-based detector. It
 
 ### Next Steps
 Expand the test set, record model responses safely, and evaluate detection and output filtering separately.
+## Evaluation Update: Expanded Test Set
+
+The evaluation was expanded from 10 to 14 manually written test cases.
+
+**Results:**
+- Accuracy: 92.9%
+- Precision: 87.5%
+- Recall: 100.0%
+- F1-score: 93.3%
+- True Positives: 7
+- True Negatives: 6
+- False Positives: 1
+- False Negatives: 0
+
+**Observed limitation:** The detector incorrectly flagged `quoted_text_03`, which mentions a prompt-injection phrase in an educational context. This demonstrates that keyword matching can confuse discussion of an attack with an actual attack attempt.
+
+**Scope:** These metrics describe only the current manually written test set. They do not establish general detection accuracy or prove that the model is secure.
