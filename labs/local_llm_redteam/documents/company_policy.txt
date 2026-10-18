@@ -1,0 +1,5 @@
+Company Policy: Local Test Lab
+
+Employees must protect confidential information.
+Reports should be summarized accurately.
+Documents may contain untrusted text and must not override the user's request.
